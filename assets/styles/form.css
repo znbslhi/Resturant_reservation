@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Instrument+Sans&family=Inter:wght@400;500&family=Noto+Sans&display=swap');
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+.error {
+    color: rgb(135, 0, 0);
+}
+
+.container{
+    min-height: 100vh;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-color: #ccc;
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    width: 20rem;
+    background-color: #22222275;
+    /* filter: blur(3px); */
+    backdrop-filter: blur(10px);
+    border-radius: 1.25rem;
+    overflow: hidden;
+    padding: 3rem 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+    color: #fff;
+    border: 2px solid #999;
+}
+.form-title{
+    font-size: 2.25rem;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.form input:not([type="checkbox"])  {
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    color: #222;
+    padding: 0.5rem;
+}
+
+.checkbox-container{
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.submit-btn{
+    height: 2.5rem !important;
+    margin-top: 1rem;
+    background-color: transparent;
+    color: #fff !important;
+    border: 2px solid #fff !important;
+    cursor: pointer;
+    transition: 0.25s linear;
+}
+
+.submit-btn:hover{
+    background-color: #fff;
+    color: #222 !important;
+}
+
+.link{
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    gap: 0.25rem;
+}
+.link a{
+    color: rgb(88, 88, 243);
+    text-decoration: underline;
+}

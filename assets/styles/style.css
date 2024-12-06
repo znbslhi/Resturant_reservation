@@ -1,0 +1,399 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+@import url('https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    font-family: "Vazir", Arial, Helvetica, sans-serif;
+}
+body , .navbar{
+background-color: #f3f2f2;
+}
+.container {
+    position: relative;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profile {
+    background-color: rgb(71 71 71);
+    padding: 0.5rem 0.5rem 0.25rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    color: #f3f2f2;
+    font-size: 1.25rem;
+}
+
+.profile:hover {
+    background-color: #FFB918;
+}
+
+.logo-container {
+    width: 5rem;
+    height: 5rem;
+}
+
+.logo-container #logo {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    height: 3rem;
+    background-color: rgb(71 71 71 );
+    direction: rtl;
+    padding: 0 5.5rem;
+    display: flex;
+    gap: 1.5rem;
+    color: #f3f2f2;
+
+}
+
+.nav-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    transition: 0.25s ease-in-out;
+    border-radius: 0.25rem;
+}
+
+.nav-item:hover {
+    background-color: #FFB918;
+    color: #fff;
+}
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Header */
+.header {
+    height: 83vh;
+    background-image: url("./../images/04.jpg");
+    background-color: #ccc;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f3f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    z-index: 20;
+}
+
+.title {
+    font-size: 5rem;
+}
+
+.desc {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Main */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 5rem 0.75rem;
+}
+
+.card-container {
+    background-color: #eeeff79e;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 0 10px #999;
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: 0.25s ease;
+}
+
+.card-container:hover {
+    transform: translateY(-10px);
+}
+
+.image-container {
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+}
+
+.title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+
+.number {
+    font-size: .75rem;
+    color: #999;
+}
+
+.location-box {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 0.75rem;
+    color: #888;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-reserve {
+    width: 45%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #E0A315;
+    padding: 0.5rem;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    outline: none;
+    border: none;
+    transition: 0.25s linear;
+}
+
+.btn-reserve:hover {
+    background-color: #FFB918;
+}
+
+/* Footer */
+.footer {
+    height: 5rem;
+    background-color: #333;
+    color: #f3f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.social {
+    transition: 0.25s linear;
+    cursor: pointer;
+}
+
+.social:hover {
+    color: #FFB918;
+    transform: scale(1.5);
+}
+
+.menu-container {
+    direction: rtl;
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.menu-container a {
+    transition: 0.25s linear;
+}
+
+.menu-item:hover {
+    color: #FFB918;
+}
+
+.restaurant-details {
+    padding: 0.75rem;
+    background-color: rgb(71 71 71 / 10%);
+    border-radius: 0.5rem;
+}
+
+.restaurant-details h3 {
+    margin-top: 0;
+}
+
+.restaurant-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.restaurant-details li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.restaurant-details li:last-child {
+    border-bottom: none;
+}
+
+ 
+ /* Desktop devices (min-width: 1024px) */
+ @media only screen and (max-width: 1024px) {
+
+    .header {
+         height: 80vh;
+     }
+    .main {
+         flex-direction: row;
+         flex-wrap: wrap;
+         gap: 3rem;
+     }
+    .card-container {
+         width: 30%;
+     }
+    .btn-box {
+         flex-direction: row;
+         gap: 2rem;
+     }
+    .btn-reserve {
+         width: 40%;
+     }
+     .footer {
+        gap: 3rem;
+        padding: 0 3rem;
+        height: 6rem;
+    }
+    .socials {
+         gap: 1rem;
+     }
+    .menu-container {
+         gap: 1.75rem;
+     }
+ }
+
+ 
+ @media only screen and (max-width: 768px) {
+    .top-section {
+        padding: 0 2rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        display: flex; 
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(71 71 71);
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        opacity: 0;
+        height: 0;
+        overflow: hidden; 
+        transition: height 0.4s ease-out, opacity 0.4s ease;
+        }
+
+    .menu.show {
+        opacity: 1;
+        height: 16rem; 
+    }
+    .nav-item {
+        padding: 0rem;
+    }
+    .nav-item:hover {
+        background-color: rgb(71 71 71);
+        color: #ffb918;
+        font-size: 1.25rem;
+    }
+    .header {
+        height: 46vh;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .desc {
+        font-size: 0.75rem;
+    }
+    .main {
+         flex-direction: column;
+         padding: 3rem 1.5rem;
+         align-items: center;
+         gap: 2rem;
+     }
+    .card-container {
+         width: 85%;
+         gap: 0.75rem;
+     }
+     .restaurant-details {
+
+        font-size: 1rem;
+    }
+    .btn-box {
+         flex-direction: column;
+         gap: 1rem;
+     }
+    .btn-reserve {
+         width: 50%;
+         font-size: 0.75rem;
+     }
+     .footer {
+        gap: 1.75rem;
+        padding: 2.5rem;
+        height: 10rem;
+    }
+    .socials {
+         
+         gap: 1rem;
+         font-size: 1.25rem;
+     }
+    .menu-container {
+         flex-direction: column;
+         gap: 1rem;
+     }
+
+
+ }
+ 

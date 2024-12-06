@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Vazir', Arial, Helvetica, sans-serif;
+
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f9f9;
+
+}
+
+.sidebar {
+    width: 200px;
+    background: linear-gradient(to bottom, #333, #444);
+    color: #fff;
+    padding: 20px;
+}
+
+.logo {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FFB918;
+    cursor: pointer;
+}
+
+.link-container {
+    margin-top: 20px;
+}
+
+.link-container a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, padding-left 0.3s;
+}
+
+.link-container a:hover {
+    background-color: #444;
+    padding-left: 25px;
+}
+
+.container {
+    width: calc(100% - 200px);
+    padding: 20px;
+    overflow-y: auto; /* Allows scrolling for long content */
+}
+
+.content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.top-options{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+/* Table styles */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  text-align: center;
+}
+
+th {
+  background: linear-gradient(to bottom, #333, #444);
+  color: #fff;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+tr:nth-child(odd) {
+  background-color: #e9ecef;
+}
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+  
+#pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#pagination button {
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#pagination button:hover {
+  background-color: #495057;
+  transform: translateY(-2px);
+}
+
+#pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#pagination span {
+  margin: 0 10px;
+  font-size: 16px;
+  color: #495057;
+}
+
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/**/
+form {
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 25%;
+}
+
+/* Form section styling */
+form section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+/* Labels */
+form label {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Inputs */
+ input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="time"],
+form input[type="number"],
+form input[type="date"],
+form select,
+form textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form input[type="time"]:focus,
+form input[type="number"]:focus,
+form input[type="date"]:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #66afe9;
+  outline: none;
+}
+
+/* Buttons */
+form button,
+form input[type="submit"] {
+  width: 40%;
+  padding: 9px 14px;
+  font-size: 20px;
+  background-color: #FFB918;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;}
+
+form button:hover,
+form input[type="submit"]:hover {
+  background-color: #e09f16;
+}
+
+/* Links */
+form .link a {
+  display: inline-block;
+  color: #FFB918;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+form .link a:hover {
+  color: #e09f16;
+}
+
+/* Checkbox and radio buttons */
+form input[type="checkbox"],
+form input[type="radio"] {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Checkbox label */
+form input[type="checkbox"] + label,
+form input[type="radio"] + label {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 14px;
+  color: #333;
+}
+.btn-add , .view-details , #search-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #FFB918;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  border:none;
+  cursor: pointer;
+
+}
+.btn-add{
+  background-color: #066d4e;
+}
+h2 {
+  text-align: center;
+}
+.view-details:hover,#search-btn:hover {
+  background-color: #e09f16;
+  transform: translateY(-2px);
+}
+.btn-add:hover {
+  background-color: #075840;
+  transform: translateY(-2px);
+}
+
+/* دکمه‌های ویرایش و حذف */
+
+.btn-delete ,.btn-edit{
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  border: none;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+}
+.btn-edit{
+  background-color: #FFB918;
+
+}
+.btn-delete:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+.btn-edit:hover {
+  background-color: #e09f16;
+  transform: translateY(-2px);
+}
+#btn-submit,.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  form {
+      padding: 15px;
+      max-width: 100%;
+  }
+
+  form section {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  form input[type="submit"],
+  form button {
+      width: 100%;
+  }
+}
